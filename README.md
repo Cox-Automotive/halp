@@ -214,6 +214,3 @@ not explicitly permitted to use.
 With any luck, this project will make modularity-first seem manageable from
 the start of a project, when such boundaries are easy to enforce and make a
 part of the system's design.
-
-
-
