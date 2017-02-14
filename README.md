@@ -2,6 +2,7 @@ Halp: unit test your code's dependencies
 ========================================
 
 [![Build Status](https://travis-ci.org/Cox-Automotive/halp.svg?branch=master)](https://travis-ci.org/Cox-Automotive/halp)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.coxautodev/halp/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.coxautodev/halp)
 
 Halp is a unit testing library designed to define and enforce dependencies
 between the logical components of your application. 
