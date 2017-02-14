@@ -1,6 +1,8 @@
 Halp: unit test your code's dependencies
 ========================================
 
+[![Build Status](https://travis-ci.org/Cox-Automotive/halp.svg?branch=master)](https://travis-ci.org/Cox-Automotive/halp)
+
 Halp is a unit testing library designed to define and enforce dependencies
 between the logical components of your application. 
 
@@ -83,7 +85,7 @@ between packages. Let's do something about that.
 
 First up, let's include the `halp` jar. In maven it looks like this:
 
-```
+```xml
 <dependency>
     <groupId>com.coxautodev</groupId>
     <artifactId>halp</artifactId>
@@ -95,7 +97,7 @@ First up, let's include the `halp` jar. In maven it looks like this:
 Then, let's create a unit test to avoid circular dependencies between classes
 and between packages.
 
-```
+```java
 import static dependency.spec.Assertions.*;
 import static dependency.spec.Core.*;
 import static dependency.spec.Modules.*;
@@ -113,7 +115,7 @@ public class ModuleTest {
 This test analyzes the project classpath, and then verifies that no circular
 dependencies exist in that scanned code. Let's try some module definitions:
 
-```
+```java
 @Test
 public void enforceModuleSystem() throws IOException {
 
