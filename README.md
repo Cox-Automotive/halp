@@ -87,7 +87,7 @@ First up, let's include the `halp` jar. In maven it looks like this:
 <dependency>
     <groupId>com.coxautodev</groupId>
     <artifactId>halp</artifactId>
-    <version>0.0.1</version>
+    <version>0.9.0</version>
     <scope>test</scope>
 </dependency>
 ```
