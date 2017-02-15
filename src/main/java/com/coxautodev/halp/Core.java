@@ -54,11 +54,15 @@ public class Core {
         return sw.getBuffer().toString();
     }
 
-    private static ClassInfo classInfo(final String name, final Set<String> dependencies) {
+    public static ClassInfo classInfo(final String name, final Set<String> dependencies) {
         return new ClassInfo() {
             public String name() { return name; }
             public Set<String> dependencies() { return dependencies; }
         };
+    }
+
+    public static ClassInfo classInfo(final String name, final String...dependencies) {
+        return classInfo(name, new HashSet(asList(dependencies)));
     }
 
     @FunctionalInterface private interface Transformer { String transform(String name); }
